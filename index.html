@@ -4,24 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Детейлинг</title>
+  <title>Car</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <div class="container text-center">
     <div class="row">
-      <div class="col bg-primary">
+      <div class="col-12 bg-primary">
+
         <nav class="navbar navbar-expand-lg bg-primary">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
               aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#">Детейлинг</a>
+              <a class="navbar-brand" href="#">Car servise</a>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Главная</a>
@@ -33,19 +36,23 @@
                   <a class="nav-link" href="#">Карта</a>
                 </li>
               </ul>
+
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Поиск</button>
               </form>
+
             </div>
           </div>
         </nav>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-6 bg-light order-1 pt-2 pb-4">
-        <h1>Детейлинг</h1>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="col-sm-12 col-md-8 col-xl-6 bg-light order-1 pt-2 pb-4">
+        <h1>Car servise</h1>
+
+        <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -59,6 +66,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -74,6 +82,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -89,6 +98,7 @@
             </div>
           </div>
         </div>
+
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -98,6 +108,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
               aria-label="Slide 3"></button>
           </div>
+
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="img/1.jpg" class="d-block w-100" alt="...">
@@ -109,11 +120,13 @@
               <img src="img/3.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
+
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -121,44 +134,86 @@
           </button>
         </div>
       </div>
-      <div class="col-3 bg-light order-0 pt-3">
-        <div class="form-check mb-1">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Только верх
-          </label>
-        </div>
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Верх + салон
-          </label>
-        </div>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck-1">
-          <label class="form-check-label" for="flexSwitchCheck-1">Чернение колес</label>
-        </div>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck-2">
-          <label class="form-check-label" for="flexSwitchCheck-2">Химчистка</label>
-        </div>
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck-3">
-          <label class="form-check-label" for="flexSwitchCheck-3">Полировка</label>
-        </div>
-        <div class="form-check form-switch mb-3">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck-4">
-          <label class="form-check-label" for="flexSwitchCheck-4">Мойка кузова</label>
-        </div>
-        <label for="customRange1" class="form-label">Стоимость услуг</label>
-        <input type="range" class="form-range" id="customRange1">
-        <input type="number" class="btn-check" id="btn-check-outlined" autocomplete="off">
-        <label class="btn btn-outline-primary" for="btn-check-outlined">Применить</label>
-      </div>
-      <div class="col-3 bg-light order-2 pt-3">
 
-        <div class="card" style="width: 18rem;">
-          <img src="img/3.jpg" class="card-img-top" alt="...">
+      <div class="col-sm-12 col-md-4 col-xl-3 bg-light order-0 pt-3 p-4">
+
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
+          <fieldset>
+            <legend>Состояние авто:</legend>
+            <div class="form-check form-switch mb-1">
+              <label class="form-check-label" for="servise">Разбитое авто</label>
+              <input class="form-check-input" type="checkbox" name="sostoyanie2" id="servise" value="crash">
+            </div>
+
+            <div class="form-check form-switch mb-1">
+              <label class="form-check-label" for="kredit">В кредите</label>
+              <input class="form-check-input" type="checkbox" name="sostoyanie2" id="kredit" value="kredit">
+            </div>
+
+            <div class="form-check form-switch mb-3">
+              <label class="form-check-label" for="bez-dokov">Без документов</label>
+              <input class="form-check-input" type="checkbox" name="sostoyanie3" id="bez-dokov" value="bez-dokov">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип топлива:</legend>
+            <div class="form-check mb-1">
+              <label class="form-check-label" for="benzin">Бензин</label>
+              <input class="form-check-input" type="checkbox" name="toplivo1" id="benzin" value="benzin">
+            </div>
+
+            <div class="form-check mb-1">
+              <label class="form-check-label" for="dizel">Дизель</label>
+              <input class="form-check-input" type="checkbox" name="toplivo2" id="dizel" value="dizel">
+            </div>
+
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="gaz-benzin">Газ/бензин</label>
+              <input class="form-check-input" type="checkbox" name="toplivo3" id="gaz-benzin" value="gaz-benzin">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Комфорт:</legend>
+            <div class="form-check mb-1">
+              <label class="form-check-label" for="luk">Люк</label>
+              <input class="form-check-input" type="checkbox" name="comf1" id="luk" value="luk">
+            </div>
+
+            <div class="form-check mb-1">
+              <label class="form-check-label" for="kozh-salon">Кожанный салон</label>
+              <input class="form-check-input" type="checkbox" name="comf2" id="kozh-salon" value="kozh-salon">
+            </div>
+
+            <div class="form-check mb-1">
+              <label class="form-check-label" for="kondicioner">Кондиционер</label>
+              <input class="form-check-input" type="checkbox" name="comf3" id="kondicioner" value="kondicioner">
+            </div>
+
+            <div class="form-check mb-3">
+              <label class="form-check-label" for="4wd">Полный привод</label>
+              <input class="form-check-input" type="checkbox" name="comf4" id="4wd" value="4wd">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div>
+              <input class="btn btn-primary mb-2" type="submit" value="Применить">
+            </div>
+
+            <div>
+              <input class="btn btn-primary mb-2" type="reset" value="Сбросить">
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-xl-3 order-2 pt-3 bg-light pb-4 p-4">
+
+        <div class="card mb-3">
+          <img src="img/2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Полный фарш</h5>
             <p class="card-text">Помыли, отполировали, вычестили, начернили и запах добавили</p>
@@ -166,44 +221,34 @@
           </div>
         </div>
 
-
+        <div class="card mb-3">
+          <img src="img/3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Полный фарш</h5>
+            <p class="card-text">Помыли, отполировали, вычестили, начернили и запах добавили</p>
+            <a href="#" class="btn btn-primary">Посмотреть</a>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="row">
-      <div class="col p-1 bg-primary">
-        <nav class="navbar navbar-expand-lg bg-primary">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <a class="navbar-brand" href="#">Детейлинг</a>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">О нас</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Карта</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Поиск</button>
-              </form>
-            </div>
-          </div>
-        </nav>
+      <div class="col-12 p-1 bg-primary">
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Car servise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Карта</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

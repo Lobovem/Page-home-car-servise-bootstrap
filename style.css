@@ -7,6 +7,10 @@
   color: white;
 }
 
+.nav-link:hover {
+  color: black;
+}
+
 .navbar-brand {
   color: white;
 }
